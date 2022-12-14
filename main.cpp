@@ -19,6 +19,7 @@ public:
             cv_.wait(lock);
 //            std::cout << "*" << std::endl;
         }
+        cv_.notify_all();
      }
 
     void pong()
